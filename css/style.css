@@ -1,0 +1,52 @@
+:root {
+  --background: #1F2225;
+  --cells: #C9C086;
+  --cell-hover: #EADBAE;
+  --cell-size: 50px;
+  --player1: #334F52;
+  --player2: #A56760;
+}
+
+* {
+  margin: 0;
+  background-color: var(--background);
+}
+
+.content {
+  margin: auto;
+  width: 648px;
+  height: 648px;
+  padding: 60px;
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  font-size: 45px;
+  margin: 2px;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  vertical-align:text-top;
+  color: black;
+  background-color: var(--cells);
+}
+
+.cell:hover, .fa:hover {
+  background-color: var(--cell-hover);
+}
+
+
+.fa {
+  display: none;
+  line-height: var(--cell-size);
+  background-color: var(--cells);
+}
+
+.fa-circle-o {
+  color: var(--player1);
+}
+
+.fa-times {
+  color: var(--player2);
+}
